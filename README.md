@@ -1,4 +1,4 @@
-linjeffrey.github.io
+My Personal Webpage
 ====================
 
-personal website
+My webpage written in HTML, CSS, and Javascript
