@@ -2484,6 +2484,10 @@ fieldset[disabled] .radio label,
 fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
+.ltag {
+  font-size:12px;
+  color: #005CB9;
+}
 .form-control-static {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -3844,7 +3848,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-header {
-    float: left;
+    text-align:center;
   }
 }
 .navbar-collapse {
@@ -3941,7 +3945,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-width: 1px 0 0;
 }
 .navbar-brand {
-  float: left;
+  float: right;
   height: 50px;
   padding: 15px 15px;
   font-size: 18px;
@@ -4022,7 +4026,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
+    float: center;
     margin: 0;
   }
   .navbar-nav > li {

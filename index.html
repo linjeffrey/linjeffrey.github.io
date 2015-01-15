@@ -18,7 +18,7 @@
     <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <style>
     body {
-        padding-top: 70px;
+        padding-top: 120px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
     </style>
@@ -39,29 +39,14 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#home">Home</a>
+                </button-->
+                <a class="navbar-brand" href="#home"><font face="Garamond">Jeffrey Lin </font></a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll"> 
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#projects">Projects</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
@@ -73,7 +58,13 @@
             <div class="col-lg-12 text-center">
                 <img class="img-circle" src="img/profile.png" width="400">
                 <div class="intro-text">
-                    <h1><span>Jeffrey</span><span class="h1Bold">Lin</span></h1>
+                    <p></p>
+                    <p><font size="420"><span>Jeffrey</span><span><b>Lin</b></span></font></p>
+                </div>
+                <div class="row inverse">
+                    <a href="#home" class="button" id="homebutton"><span>Home</span></a>
+                    <a href="#about" class="button" id="aboutbutton"><span>About</span></a>
+                    <a href="#projects" class="button" id="projectsbutton"><span>Projects</span></a>
                 </div>
             </div>
         </div>
@@ -86,19 +77,19 @@
                 <h2>About me</h2>
                 <p class="justifiedText">I am currently a student at UC Berkeley in the College of Engineering, studying Electrical Engineering and Computer Science. In my spare time, I love playing basketball, which allows me to pursue my other passion: eating. Find out more about me:</p>
 
-                <div class="footer-col col-md-4">
+                <div class="footer-col">
                     <ul class="list-inline text-center">
                             <li>
-                                <a href="http://www.linkedin.com/in/jeffreyjlin" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                <a href="http://www.linkedin.com/in/jeffreyjlin" class="btn-outline"><i class="fa fa-fw fa-linkedin fa-lg"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/JeffreyJLin" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/JeffreyJLin" class="btn-outline"><i class="fa fa-fw fa-facebook fa-lg"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.github.com/linjeffrey" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                                <a href="https://www.github.com/linjeffrey" class="btn-outline"><i class="fa fa-fw fa-github fa-lg"></i></a>
                             </li>
                             <li>
-                                <a href="mailto:jefflin@berkeley.edu" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a>
+                                <a href="mailto:jefflin@berkeley.edu" class="btn-outline"><i class="fa fa-fw fa-envelope fa-lg"></i></a>
                             </li>
                     </ul>
                 </div>
@@ -113,41 +104,44 @@
             
                 <h2>Projects</h2>
 
+                <div class="row">
                 <div class="col-md-4" align="center">
-                     <a href="http://github.com/linjeffrey">
-                        <img src="img/myo.png" class="img-circle" width="175"/>
+                     <a href="http://github.com/linjeffrey/myocar">
+                        <img src="img/myo.png" class="img-circle img-responsive" width="175"/>
                     </a>
                 </div>
-                <div class="cold-md-8">
+                <div class="col-md-8">
                     <h3>MyoCar</h3>
                     <p>@<a href="http://github.com/linjeffrey/myocar">http://github.com/linjeffrey</a></p>
-                    <p class="language">#c #c-sharp #unity-game-engine</p>
+                    <p class="ltag">#c #c-sharp #unity-game-engine</p>
                     <p>The MyoCar allows for control of a car with the Myo armband.</p>
                 </div>
                 </div>
 
+                <div class="row">
                 <div class="col-md-4" align="center">
                      <a href="http://protypecount.herokuapp.com">
                         <img src="img/typecounter.png" class="img-circle" width="175" height="125"/>
                     </a>
                 </div>
-                <div class="cold-md-8">
+                <div class="col-md-8">
                     <h3>Type Counter</h3>
                     <p>@<a href="http://protypecount.herokuapp.com">http://protypecount.herokuapp.com</a></p>
-                    <p class="language">#python #flask #heroku</p>
+                    <p class="ltag">#python #flask #heroku</p>
                     <p>Type counter finds the frequency of each finger used within the entered text.</p>
                 </div>
                 </div>
 
+                <div class="row">
                 <div class="col-md-4" align="center">
-                     <a href="http://github.com/linjeffrey">
+                     <a href="http://github.com/linjeffrey/YakarmaGenerator">
                         <img src="img/yikyakinglogo.png" class="img-circle" width="175"/>
                     </a>
                 </div>
-                <div class="cold-md-8">
+                <div class="col-md-8">
                     <h3>Yik Yak*ing</h3>
-                    <p>@<a href="http://github.com/linjeffrey/YakarmaGenerator" class="noA">http://github.com/linjeffrey</a></p>
-                    <p class="language">#python #android</p>
+                    <p>@<a href="http://github.com/linjeffrey/YakarmaGenerator">http://github.com/linjeffrey</a></p>
+                    <p class="ltag">#python #android</p>
                     <p>Yik Yak*ing is a Yakarma generator that crawls the internet for thoughts to repost in order to reap the sweet imaginary internet points.</p>
                 </div>
                 </div>
