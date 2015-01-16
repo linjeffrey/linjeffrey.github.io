@@ -16,11 +16,13 @@
   background-color: transparent;
 }
 .button {
-	padding:20px 10px 20px 10px;
+	padding:5px 10px 5px 10px;
   	font-size: 20px;
   	line-height: 20px;
   	font-family:"PT Serif";
   	color:#777;
+  	border: 2px solid;
+  	border-radius: 25px;
 }
 
 .hBig {
