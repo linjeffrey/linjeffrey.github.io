@@ -12,7 +12,7 @@
     <title>Jeffrey Lin | UC Berkeley</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -25,6 +25,7 @@
     #home, #about, #projects{
         padding-top:60px;
         padding-bottom:60px;
+        min-height:100vw;
         width:100vw;
         background: -webkit-linear-gradient(left top, silver , white); /* For Safari 5.1 to 6.0 *
         background: -o-linear-gradient(bottom right, silver, white); /* For Opera 11.1 to 12.0 */
@@ -94,8 +95,6 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-
-                <div class="col-md-8">
                 <div class="intro-text">
                     <p></p>
                     <p class="hBig"><span>Jeffrey</span><span><b>Lin</b></span></p>
@@ -107,10 +106,9 @@
                     <a href="#projects" class="button" id="projectsbutton"><span>Projects</span></a>
                     </row>
                 </div>
-                </div>
-                <div class="col-md-4">
+                <!--div class="col-md-4">
                 <img class="img-circle" src="img/profile.png" width="300vw">
-                </div>
+                </div-->
             </div>
         </div>
         <!-- /.row -->
@@ -154,7 +152,7 @@
                 </div>
                 <div class="col-md-8">
                     <h3>MyoCar</h3>
-                    <p>@<a href="http://github.com/linjeffrey/myocar">http://github.com/linjeffrey</a></p>
+                    <p>@<a class="lnk" href="http://github.com/linjeffrey/myocar">http://github.com/linjeffrey</a></p>
                     <p class="ltag">#c #c-sharp #unity-game-engine</p>
                     <p>The MyoCar allows for control of a car with the Myo armband.</p>
                 </div>
@@ -168,7 +166,7 @@
                 </div>
                 <div class="col-md-8">
                     <h3>Type Counter</h3>
-                    <p>@<a href="http://protypecount.herokuapp.com">http://protypecount.herokuapp.com</a></p>
+                    <p>@<a class="lnk"href="http://protypecount.herokuapp.com">http://protypecount.herokuapp.com</a></p>
                     <p class="ltag">#python #flask #heroku</p>
                     <p>Type counter finds the frequency of each finger used within the entered text.</p>
                 </div>
@@ -182,7 +180,7 @@
                 </div>
                 <div class="col-md-8">
                     <h3>Yik Yak*ing</h3>
-                    <p>@<a href="http://github.com/linjeffrey/YakarmaGenerator">http://github.com/linjeffrey</a></p>
+                    <p>@<a class="lnk" href="http://github.com/linjeffrey/YakarmaGenerator">http://github.com/linjeffrey</a></p>
                     <p class="ltag">#python #android</p>
                     <p>Yik Yak*ing is a Yakarma generator that crawls the internet for thoughts to repost in order to reap the sweet imaginary internet points.</p>
                 </div>
@@ -191,7 +189,7 @@
     </div>
 
      <footer class="text-center" id="foot">
-            ©2014 <a href="http://linjeffrey.me">Jeffrey Lin</a>
+            ©2014 <a class="lnk" href="http://linjeffrey.me">Jeffrey Lin</a>
             </footer>
 
     <!-- jQuery Version 1.11.1 -->

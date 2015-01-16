@@ -7,14 +7,7 @@
   font-family:"PT Serif";
   color:#777;
 }
-.hBrand:hover,
-.hBrand:focus,
-.button:hover,
-.button:focus {
-  text-decoration: none;
-  color: #5e5e5e;
-  background-color: transparent;
-}
+
 .button {
 	padding:5px 10px 5px 10px;
   	font-size: 20px;
@@ -30,5 +23,19 @@
 	font-size:100px;
 }
 .ltag {
-	color: #C0C0C0;
+	color: #888;
+}
+.lnk {
+	color:#777;
+	line-height:10px;
+}
+.hBrand:hover,
+.hBrand:focus,
+.button:hover,
+.button:focus 
+.lnk:hover,
+.lnk:focus{
+  text-decoration: none;
+  color: #5e5e5e;
+  background-color: transparent;
 }
