@@ -8,41 +8,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jeffrey Lin">
     <meta name="description" content="I am Jeffrey Lin, an Electrical Engineering and Computer Science major at UC Berkeley, and this is my website.">
+    <meta name="keywords" content="jeffrey, lin, jeffreylin, jefflin, linjeffrey, linjeffreyj, uc, berkeley, ucberkeley">
 
     <title>Jeffrey Lin | UC Berkeley</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Custom Fonts -->
     <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Custom CSS -->
+    <link href="css/ihover.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <style>
-    body {
+        body {
         padding-top: 40px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    #home, #about, #projects{
-        padding-top:60px;
-        padding-bottom:60px;
-        min-height:100vw;
-        width:100vw;
-        background: -webkit-linear-gradient(left top, silver , white); /* For Safari 5.1 to 6.0 *
-        background: -o-linear-gradient(bottom right, silver, white); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(bottom right, silver, white); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to bottom right, silver, white); /* Standard syntax (must be last) */    
-    }
+        background-image:url('img/bg1blur.jpg'); 
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        background-position: center;
 
-    #foot{
-            width:100vw;
-        background: -webkit-linear-gradient(left top, silver , white); /* For Safari 5.1 to 6.0 *
-        background: -o-linear-gradient(bottom right, silver, white); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(bottom right, silver, white); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to bottom right, silver, white); /* Standard syntax (must be last) */    
-    }
-    #about,#projects {
-        font-family:"PT Serif";
-    }
+
+}
     
     </style>
 
@@ -75,14 +68,14 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden page-scroll">
+                    <li class="hidden">
                         <a href="#home"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">about</a>
+                        <a href="#about">ABOUT</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#projects">projects</a>
+                        <a href="#projects">PROJECTS</a>
                     </li>
                 </ul>
             </div>
@@ -91,13 +84,17 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container" id="home">
+    <div class="container" id="home" align:"center">
 
         <div class="row">
             <div class="col-lg-12 text-center">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-6">
                 <div class="intro-text">
                     <p></p>
-                    <p class="hBig"><span>Jeffrey</span><span><b>Lin</b></span></p>
+                    <p class="hBig"><span>Jeffrey</span><span style="color:black"><b>Lin</b></span></p>
+
                 </div>
                 <div class="btn-group" role="group">
                     <row class="page-scroll">
@@ -105,17 +102,20 @@
                     <a href="#about" class="button" id="aboutbutton"><span>About</span></a>
                     <a href="#projects" class="button" id="projectsbutton"><span>Projects</span></a>
                     </row>
+                    
                 </div>
-                <!--div class="col-md-4">
-                <img class="img-circle" src="img/profile.png" width="300vw">
-                </div-->
+                </div>
+                <div class="col-md-4">
+                 <img class="img-circle" src="img/profile1.png" width="250vw">
+                 </div>
+                
             </div>
         </div>
         <!-- /.row -->
         
     </div>
     <!-- /.container -->
-    <div class="container" id="about">
+    <div class="container about" id="about">
             <h1 class="text-center"><b>About me</b></h1>
             <div class="col-lg-12 text-center">
             <div class="col-md-4 text-center">
@@ -144,49 +144,107 @@
             
                 <h1 class="text-center"><b>Projects</b></h1>
 
-                <div class="col-lg-12">
+                <div id="hackathonprojects">
+                <h2 align="center">Top Projects</h2>
+                <div class="row">
+                
                 <div class="col-md-4" align="center">
                      <a href="http://github.com/linjeffrey/myocar">
                         <img src="img/myo.png" class="img-circle img-responsive" width="175"/>
                     </a>
                 </div>
                 <div class="col-md-8">
-                    <h3>MyoCar</h3>
+                    <h3 class="projectName">MyoCar</h3>
                     <p>@<a class="lnk" href="http://github.com/linjeffrey/myocar">http://github.com/linjeffrey</a></p>
                     <p class="ltag">#c #c-sharp #unity-game-engine</p>
                     <p>The MyoCar allows for control of a car with the Myo armband.</p>
                 </div>
                 </div>
 
-                <div class="col-lg-12">
+                <div class="row">
                 <div class="col-md-4" align="center">
                      <a href="http://protypecount.herokuapp.com">
                         <img src="img/typecounter.png" class="img-circle" width="175" height="125"/>
                     </a>
                 </div>
                 <div class="col-md-8">
-                    <h3>Type Counter</h3>
+                    <h3 class="projectName">Type Counter</h3>
                     <p>@<a class="lnk"href="http://protypecount.herokuapp.com">http://protypecount.herokuapp.com</a></p>
                     <p class="ltag">#python #flask #heroku</p>
+                    <p>*HackJam Hackathon award winner*</p>
                     <p>Type counter finds the frequency of each finger used within the entered text.</p>
                 </div>
                 </div>
 
-                <div class="col-lg-12">
+                <div class="row">
                 <div class="col-md-4" align="center">
                      <a href="http://github.com/linjeffrey/YakarmaGenerator">
                         <img src="img/yikyakinglogo.png" class="img-circle" width="175"/>
                     </a>
                 </div>
                 <div class="col-md-8">
-                    <h3>Yik Yak*ing</h3>
+                    <h3 class="projectName">Yik Yak*ing</h3>
                     <p>@<a class="lnk" href="http://github.com/linjeffrey/YakarmaGenerator">http://github.com/linjeffrey</a></p>
                     <p class="ltag">#python #android</p>
                     <p>Yik Yak*ing is a Yakarma generator that crawls the internet for thoughts to repost in order to reap the sweet imaginary internet points.</p>
                 </div>
                 </div>
-                              
-    </div>
+                </div>
+                <div id="otherprojects">
+
+                <h2 align="center">Other Projects</h2>
+
+
+                <!-- Left to right-->
+                <div class="col-lg-12">
+    <div class="col-md-4" align="center">
+ 
+    <!-- normal -->
+    <div class="ih-item circle effect3 left_to_right"><a href="#">
+        <div class="img"><img src="img/bu.png" alt="img"></div>
+        <div class="info">
+          <h3>Inert anodes</h3>
+          <p class="ltag">#research #material-science</p>
+          <p>Worked at Prof. Pal's lab in Boston university on creating inert anodes for silicon development.</p>
+        </div></a></div>
+    <!-- end normal -->
+ 
+  </div>
+
+  <div class="col-md-4" align="center">
+ 
+    <!-- normal -->
+    <div class="ih-item circle effect3 left_to_right"><a href="#">
+        <div class="img"><img src="img/website.jpg" alt="img"></div>
+        <div class="info">
+          <h3>This Website</h3>
+          <p class="ltag">#html #css #javascript</p>
+          <p>Built this website from scratch, using bootstrap and iHover.</p>
+        </div></a></div>
+    <!-- end normal -->
+ 
+  </div>
+
+  <div class="col-md-4" align="center">
+ 
+    <!-- normal -->
+    <div class="ih-item circle effect3 left_to_right"><a href="#">
+        <div class="img"><img src="img/meteor.png" alt="img"></div>
+        <div class="info">
+          <h3>Message board</h3>
+          <p class="ltag">#meteor.js</p>
+          <p>Learned to use meteor by building a simple message board.</p>
+        </div></a></div>
+    <!-- end normal -->
+ 
+  </div>
+  
+</div>
+<!-- end Left to right-->
+</div>
+
+</div>                   
+    
 
      <footer class="text-center" id="foot">
             ©2014 <a class="lnk" href="http://linjeffrey.me">Jeffrey Lin</a>
@@ -199,6 +257,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <div class="overlay"></div>
 
 </body>
 
