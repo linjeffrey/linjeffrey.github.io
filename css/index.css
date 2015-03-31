@@ -43,6 +43,12 @@
 .ltag {
 	color: silver;
 }
+.title {
+  color: white;
+}
+.subtitle {
+  color: silver;
+}
 .lnk {
 	color:#000;
 	line-height:10px;
