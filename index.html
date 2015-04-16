@@ -22,12 +22,64 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+        <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+    $(function(){
+      $("#typed").typed({
+        strings: ["Hi!", "I'm Jeffrey.", "Jeffrey Lin"],
+        typeSpeed: 30,
+        backDelay: 500,
+      });
+    });
+    </script>
 
 
     <!-- Custom CSS -->
     <link href="css/ihover.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
         body {
         padding-top: 40px;
         background-image:url('img/bg1blur.jpg'); 
@@ -35,9 +87,7 @@
         background-attachment:fixed;
         background-size: cover;
         background-position: left;
-
-
-}
+        }
     
     </style>
 
@@ -93,11 +143,15 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-6">
-                <div class="intro-text">
+
+                <div class = "intro-text hBig">
+                    <span id="typed"></span>
+                </div>
+                <!-- div class="intro-text">
                     <p></p>
                     <p class="hBig"><span>Jeffrey</span><span style="color:black"><b>Lin</b></span></p>
 
-                </div>
+                </div-->
                 <div class="btn-group" role="group">
                     <row class="page-scroll">
                     <a href="#home" class="button" id="homebutton"><span>Home</span></a>
@@ -301,13 +355,7 @@
             ©2014 <a class="lnk" href="http://linjeffrey.me">Jeffrey Lin</a>
             </footer>
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.easing.1.3.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 
 </body>
