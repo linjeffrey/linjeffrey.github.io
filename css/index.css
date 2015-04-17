@@ -26,7 +26,10 @@
   font-family:"PT Serif", Garamond;
   color: white;
 }
-
+.navLnk {
+  font-family:"PT Serif", Garamond, Arial;
+  font-weight: bold;
+}
 .button {
 	padding:5px 10px 5px 10px;
   	font-size: 20px;
@@ -57,7 +60,7 @@
 .hBrand:hover,
 .hBrand:focus,
 .button:hover,
-.button:focus 
+.button:focus,
 .lnk:hover,
 .lnk:focus{
   text-decoration: none;
