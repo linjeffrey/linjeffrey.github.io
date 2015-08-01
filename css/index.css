@@ -29,13 +29,14 @@
 .navLnk {
   font-family:"PT Serif", Garamond, Arial;
   font-weight: bold;
+  color: white;
 }
 .button {
 	padding:5px 10px 5px 10px;
   	font-size: 20px;
   	line-height: 20px;
   	font-family:"PT Serif", Garamond, Arial;
-  	color:white;
+  	color:silver;
   	border: 2px solid;
   	border-radius: 25px;
 }
